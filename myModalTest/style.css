@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#myImg {
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  display: none;
+  height: 100dvh;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+}
+.modalImg {
+  display: block;
+  max-width: 700px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  color: white;
+  font-size: 5rem;
+  left: 90%;
+  z-index: 1;
+}
+.close:hover {
+  cursor: pointer;
+}
+.catchImgInfo {
+  color: yellow;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 80%;
+}

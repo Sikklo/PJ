@@ -1,119 +1,132 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-ul {
-  list-style: none;
-}
-/* ---------------全域Util--------------- */
-nav {
-  margin: 0px 30px;
-  display: flex;
-  justify-content: space-between;
-  background-color: black;
-  color: white;
-  transition: all 1s;
-}
-nav:hover {
-  background-color: rgb(215, 164, 227);
-}
-.title {
-  font-size: 3.5em;
-  padding: 20px;
-  font-weight: bold;
-}
-#nav-ul {
+/* here's tp to the section */
+.guide ul {
+  padding: 0px;
   display: flex;
   justify-content: center;
-  column-gap: 10px;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  letter-spacing: 5px;
-  margin-right: 30px;
+  font-size: 1.3rem;
+  column-gap: 50px;
+  font-weight: bold;
+  border-bottom: 2px solid violet;
 }
-.banner {
-  margin: 10px 30px;
-  background-image: url(./images/banner1.jpg);
-  height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all 1s ease;
-}
-.myBtn {
-  color: white;
-}
-.myBtn:hover {
-  background-color: hsl(289, 53%, 87%);
+
+.guide a {
   color: black;
 }
-#searchInput {
-  width: 200px;
-  padding: 5px;
-  border: none;
+
+.guide li {
+  transition: 0.3s all;
+}
+.guide li:hover {
+  background-color: rgb(208, 208, 208);
   border-radius: 5px;
-  outline: none;
 }
-/* ---------------Nav-Util--------------- */
+/* ------------------------------------ */
 
-.slider {
-  position: relative;
-}
-
-.slider button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  padding: 0 5px;
-  background-color: rgba(255, 255, 255, 0.195);
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: all 1s;
-}
-.prev {
-  left: 0;
-}
-.next {
-  right: 0;
-}
-.slider button:hover {
-  background-color: black;
+.myItem {
+  min-height: 90dvh;
 }
 
-.slider img {
-  display: none;
+/* here is the pic basic setting */
+.myItem-pic-all,
+.myItem-pic-type {
+  min-height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.8;
+  transition: 0.5s all ease;
 }
 
-img.displaySlide {
+/* ------------------------------------ */
+
+/* and you can change the background img here */
+.myItem-pic-all {
+  background-image: url(./images/item1.jpg);
+}
+.myItem-pic-type {
+  background-image: url(./images/item2.jpg);
+}
+
+/* ------------------------------------ */
+/* here's the img hover */
+.myItem-pic-all:hover,
+.myItem-pic-type:hover {
+  opacity: 1;
+}
+
+/* ------------------------------------ */
+
+.item-info {
   display: flex;
-  animation: fade 1.5s;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 100px;
 }
-@keyframes fade {
-  from {
-    opacity: 0.5;
+.item-info h2 {
+  margin-bottom: 50px;
+  font-size: 4rem;
+}
+.item-info p {
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+@media screen and (max-width: 575px) {
+  .item-info h2 {
+    font-size: 3rem;
   }
-  to {
-    opacity: 1;
+  .item-info p {
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .item-info {
+    padding: 0;
   }
 }
-/* ---------------Slider Util--------------- */
-.items {
+@media screen and (max-width: 661px) {
+  .item-info h2 {
+    font-size: 3rem;
+  }
+  .item-info p {
+    letter-spacing: 0.5px;
+    line-height: 20px;
+  }
+  .item-info {
+    padding: 0 100px;
+  }
+}
+.item-info button {
+  background-color: transparent;
+}
+/* footer what are we doing this for */
+
+.reason {
+  height: 100dvh;
+}
+.reason-info {
   display: flex;
-  height: 50dvh;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.item {
-  opacity: 0.6;
-  transition: all 1s ease;
+.reason-info h2 {
+  font-size: 4rem;
+  font-style: italic;
 }
-.item:hover {
-  opacity: 1;
-  transform: scale(1.1);
+.reason-info p {
+  letter-spacing: 1px;
+  padding: 20px;
+}
+@media screen and (max-width: 575px) {
+  .reason-info h2 {
+    font-size: 3rem;
+    font-style: italic;
+  }
+  .reason-info p {
+    letter-spacing: none;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
 }

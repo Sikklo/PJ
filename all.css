@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Kanit", "Times New Roman", Times, serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* ---------------全域Util--------------- */
+/* here's Go back to the top button */
+
+.go-top {
+  position: fixed;
+  left: 95%;
+  top: 90%;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.go-top:hover::after {
+  content: "回到最上層";
+  font-size: 1rem;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+}
+.font-big {
+  font-size: 40px;
+}
+.guide {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* end of navbar */
+.search-form {
+  font-size: 1.3rem;
+}
+.search-form input {
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.search-form input:hover {
+  outline: auto;
+  outline-color: black;
+}
+.search-form input:active {
+  border-color: blanchedalmond;
+  box-shadow: 2px 2px 2px black;
+}
+
+/* here's footer section */
+
+.footer-info {
+  height: 30dvh;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  font-size: 1.2rem;
+  line-height: 60px;
+}
+.myLogoImg {
+  background-image: url(./images/item3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.media-icon {
+  color: black;
+}

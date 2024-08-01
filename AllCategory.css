@@ -1,0 +1,97 @@
+.categoryList {
+  display: flex;
+  width: 100%;
+}
+.List-Group {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 5px;
+  left: 0;
+}
+
+.categorys {
+  padding: 5px 10px;
+  margin: auto;
+}
+.categorys:hover {
+  cursor: pointer;
+}
+.myList-toggle {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+.product {
+  text-align: center;
+  margin-top: 10px;
+}
+.product img {
+  border-radius: 20px;
+}
+.List-Group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+  margin: 0;
+  padding: 10px 0;
+  border-radius: 5px;
+  left: 0;
+  animation: none;
+}
+.List-Group button {
+  border: none;
+  border-radius: 5px;
+  color: rgb(126, 126, 126);
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: transparent;
+  transition: 0.5s all ease-in-out;
+}
+.List-Group button:hover {
+  color: rgb(236, 207, 255);
+  background-color: black;
+}
+@media only screen and (max-width: 600px) {
+  .myList-toggle {
+    position: relative;
+  }
+  .List-Group {
+    width: 98%;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 10px;
+    display: none;
+    align-content: center;
+  }
+  .active {
+    height: 50%;
+  }
+  .List-Group button {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+  .myList-toggle {
+    display: block;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .categoryList {
+    display: flex;
+  }
+  .List-Group {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 10px 0;
+    border-radius: 5px;
+    left: 0;
+  }
+  .myList-toggle {
+    display: none;
+  }
+}
